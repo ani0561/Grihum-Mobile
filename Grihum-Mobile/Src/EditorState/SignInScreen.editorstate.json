@@ -311,7 +311,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1641,7 +1641,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1774,7 +1774,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2257,7 +2257,7 @@
       "MetaDataIDKey": "",
       "Name": "signinForgotPasswordbtn",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3579,7 +3579,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInputPassword",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
