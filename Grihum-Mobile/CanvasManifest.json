@@ -115,11 +115,11 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "ede4c8c1-81b4-4e5b-8e3f-6c94e5594733",
-    "Id": "ede4c8c1-81b4-4e5b-8e3f-6c94e5594733",
+    "Id": "f660cf80-1f71-4ecb-8800-88bc0951d975",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "GHFL_NAIDU",
+    "Name": "GHFL_NAIDU.msapp",
     "OriginatingVersion": "1.343",
     "ParserErrorCount": 0,
     "ShowStatusBar": false

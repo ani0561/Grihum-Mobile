@@ -204,17 +204,6 @@
                         Y: =296
                         ZIndex: =9
 
-                    Label3_13 As label:
-                        FontWeight: =FontWeight.Bold
-                        Height: =32
-                        Size: =16
-                        Text: |-
-                            ="Psted on:"
-                        Width: =120
-                        X: =45
-                        Y: =336
-                        ZIndex: =10
-
                     Label3_14 As label:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
@@ -224,17 +213,6 @@
                         X: =253
                         Y: =490
                         ZIndex: =11
-
-                    Label3_16 As label:
-                        FontWeight: =FontWeight.Semibold
-                        Height: =32
-                        Size: =16
-                        Text: |-
-                            ="4 Aug 2024  14:11:37"
-                        Width: =346
-                        X: =187
-                        Y: =336
-                        ZIndex: =13
 
                     Label2_12 As label:
                         FontWeight: =FontWeight.Bold
@@ -268,11 +246,11 @@
                     Label8 As label:
                         Height: =107
                         Overflow: =Overflow.Scroll
-                        Size: =16
+                        Size: =18
                         Text: ="How to fill the ghfl 12 steps application form in online can you explain how to fill the form without any errors in it"
                         Width: =560
-                        X: =39
-                        Y: =383
+                        X: =45
+                        Y: =345
                         ZIndex: =18
 
                     Icon10 As icon.Message:
@@ -352,6 +330,8 @@
     Image3 As image:
         Height: =60
         Image: =User().Image
+        OnSelect: |-
+            =UpdateContext({ShowProfile: !ShowProfile})
         RadiusBottomLeft: =60
         RadiusBottomRight: =60
         RadiusTopLeft: =60
@@ -362,7 +342,7 @@
         ZIndex: =7
 
     Circle1 As circle:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(184, 0, 0, 1)
         Height: =36
         Width: =36
         X: =508
@@ -411,4 +391,103 @@
         X: =22
         Y: =20
         ZIndex: =14
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =334
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Visible: =ShowProfile
+        Width: =360
+        X: =279
+        Y: =90
+        ZIndex: =15
+
+        Label2_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =14
+            Text: =User().FullName
+            Visible: =ShowProfile
+            Width: =216
+            X: =94
+            Y: =19
+            ZIndex: =2
+
+        Label2_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =14
+            Text: =User().Email
+            Visible: =ShowProfile
+            Width: =236
+            X: =94
+            Y: =46
+            ZIndex: =3
+
+        Label2_7 As label:
+            Color: =RGBA(0, 121, 187, 1)
+            FontWeight: =FontWeight.Semibold
+            Size: =14
+            Text: ="Sign Out"
+            Visible: =ShowProfile
+            Width: =273
+            X: =37
+            Y: =270
+            ZIndex: =8
+
+        Rectangle3 As rectangle:
+            Height: =1
+            Width: =307
+            X: =23
+            Y: =113
+            ZIndex: =9
+
+        Button3 As button:
+            Align: =Align.Left
+            Color: =RGBA(0, 121, 187, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =36
+            HoverColor: =RGBA(0, 121, 187, 1)
+            HoverFill: =
+            PressedColor: =RGBA(153, 207, 236, 1)
+            Size: =14
+            Text: ="Profile"
+            Width: =180
+            X: =37
+            Y: =137
+            ZIndex: =10
+
+        Button3_1 As button:
+            Align: =Align.Left
+            Color: =RGBA(0, 121, 187, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =38
+            HoverColor: =RGBA(0, 121, 187, 1)
+            HoverFill: =
+            PressedColor: =RGBA(153, 207, 236, 1)
+            Size: =14
+            Text: ="Messages"
+            Width: =180
+            X: =37
+            Y: =168
+            ZIndex: =11
+
+        Button3_2 As button:
+            Align: =Align.Left
+            Color: =RGBA(0, 121, 187, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =36
+            HoverColor: =RGBA(0, 121, 187, 1)
+            HoverFill: =
+            PressedColor: =RGBA(153, 207, 236, 1)
+            Size: =14
+            Text: ="My Activity"
+            Width: =180
+            X: =40
+            Y: =222
+            ZIndex: =12
 
