@@ -1,0 +1,208 @@
+"Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1050
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            TextInput2 As text:
+                Default: ="Search"
+                Height: =60
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =21
+                Width: =350
+                X: =26
+                Y: =35
+                ZIndex: =2
+
+            Label4_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =30
+                Size: =21
+                Text: ="Filter"
+                Width: =90
+                X: =498
+                Y: =69
+                ZIndex: =3
+
+            "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Fill: =RGBA(215, 223, 240, 0.66)
+                Height: =920
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =751
+                Y: =130
+                ZIndex: =4
+
+                Separator2 As rectangle:
+                    BorderColor: =RGBA(116, 116, 116, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(149, 149, 149, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                Rectangle3 As rectangle:
+                    Height: =Parent.TemplateHeight - Separator2.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =6
+
+                Container5 As groupContainer.manualLayoutContainer:
+                    Height: =751
+                    Width: =640
+                    ZIndex: =7
+
+                    Image3_1 As image:
+                        Height: =60
+                        Image: =User().Image
+                        RadiusBottomLeft: =60
+                        RadiusBottomRight: =60
+                        RadiusTopLeft: =60
+                        RadiusTopRight: =60
+                        Width: =60
+                        X: =45
+                        Y: =38
+                        ZIndex: =1
+
+                    Label6 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =21
+                        Text: ="Ghfl Forum"
+                        Width: =300
+                        X: =123
+                        Y: =38
+                        ZIndex: =2
+
+                    Label7 As label:
+                        Height: =30
+                        Size: =18
+                        Text: =User().FullName
+                        Width: =300
+                        X: =125
+                        Y: =68
+                        ZIndex: =3
+
+                    Image4 As image:
+                        Height: =60
+                        Image: ='1134458195'
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =60
+                        RadiusBottomRight: =60
+                        RadiusTopLeft: =60
+                        RadiusTopRight: =60
+                        Width: =60
+                        X: =522
+                        Y: =38
+                        ZIndex: =4
+
+            Icon9 As icon.Search:
+                Color: =RGBA(0, 13, 75, 1)
+                Height: =40
+                Icon: =Icon.Search
+                Width: =50
+                X: =313
+                Y: =42
+                ZIndex: =5
+
+    Icon5 As icon.Search:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.Search
+        X: =102
+        Y: =12
+        ZIndex: =5
+
+    Icon6 As icon.Bell:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =60
+        Icon: =Icon.Bell
+        Width: =60
+        X: =471
+        Y: =15
+        ZIndex: =6
+
+    Image3 As image:
+        Height: =60
+        Image: =User().Image
+        RadiusBottomLeft: =60
+        RadiusBottomRight: =60
+        RadiusTopLeft: =60
+        RadiusTopRight: =60
+        Width: =60
+        X: =563
+        Y: =13
+        ZIndex: =7
+
+    Circle1 As circle:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =36
+        Width: =36
+        X: =508
+        Y: =9
+        ZIndex: =8
+
+    Image1_1 As image:
+        Height: =90
+        Image: =image
+        Width: =220
+        X: =211
+        ZIndex: =10
+
+    Icon7 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Icon: =Icon.Add
+        Width: =70
+        X: =394
+        Y: =100
+        ZIndex: =11
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =30
+        Size: =21
+        Text: ="Post"
+        Width: =75
+        X: =394
+        Y: =150
+        ZIndex: =12
+
+    Icon8 As icon.Filter:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Icon: =Icon.Filter
+        X: =514
+        Y: =103
+        ZIndex: =13
+

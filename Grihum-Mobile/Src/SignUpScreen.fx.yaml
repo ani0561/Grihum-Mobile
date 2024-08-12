@@ -60,7 +60,7 @@ SignUpScreen As screen:
             Size: =18
             Width: =560
             X: =40
-            Y: =351
+            Y: =405
             ZIndex: =4
 
         LabelsignupEmail As label:
@@ -71,7 +71,7 @@ SignUpScreen As screen:
             Text: ="USERNAME/EMAIL"
             Width: =560
             X: =40
-            Y: =236
+            Y: =326
             ZIndex: =5
 
         TextInputsignupp As text:
@@ -88,12 +88,12 @@ SignUpScreen As screen:
         Labelsignupp As label:
             Color: =RGBA(184, 0, 0, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =70
+            Height: =64
             Size: =18
             Text: ="PASSWORD"
             Width: =560
             X: =40
-            Y: =466
+            Y: =496
             ZIndex: =7
 
         ButtonsignupCreateAccount As button:
