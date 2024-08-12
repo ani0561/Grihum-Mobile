@@ -71,7 +71,7 @@
                     ZIndex: =4
 
                 Container7_1 As groupContainer.manualLayoutContainer:
-                    Fill: =RGBA(215, 223, 240, 1)
+                    Fill: =RGBA(215, 223, 240, 0.65)
                     Height: =1386
                     Width: =640
                     ZIndex: =5
