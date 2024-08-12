@@ -71,7 +71,7 @@ Screen2 As screen:
                     ZIndex: =4
 
                 Container7_1 As groupContainer.manualLayoutContainer:
-                    Fill: =RGBA(215, 223, 240, 1)
+                    Fill: =RGBA(215, 223, 240, 0.65)
                     Height: =1386
                     Width: =640
                     ZIndex: =5
@@ -209,7 +209,7 @@ Screen2 As screen:
                         Size: =21
                         Text: ="*"
                         Width: =30
-                        X: =223
+                        X: =184
                         Y: =1000
                         ZIndex: =14
 
