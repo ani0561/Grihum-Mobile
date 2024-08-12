@@ -83,6 +83,7 @@ SignInScreen As screen:
                 // Reset email and password input fields
                 Reset(TextInputEmail);
                 Reset(TextInputPassword);
+            PressedFill: =RGBA(56, 96, 178, 1)
             Size: =18
             Text: ="Login"
             Width: =542
