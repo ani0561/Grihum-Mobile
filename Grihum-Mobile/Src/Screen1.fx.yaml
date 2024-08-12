@@ -1,7 +1,7 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(215, 223, 240, 0.47)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -19,7 +19,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1409
+            Height: =1270
             Width: =Parent.Width
             X: =0
             Y: =0
