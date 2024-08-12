@@ -25,6 +25,29 @@
             Y: =0
             ZIndex: =1
 
+            Rectangle2_4 As rectangle:
+                Fill: =RGBA(50, 86, 160, 1)
+                Height: =60
+                Width: =65
+                X: =533
+                Y: =43
+                ZIndex: =2
+
+            Triangle1_2 As triangle:
+                Fill: =RGBA(204, 102, 201, 0.78)
+                Height: =60
+                Width: =60
+                X: =580
+                ZIndex: =3
+
+            Rectangle1_2 As rectangle:
+                Fill: =RGBA(136, 160, 209, 1)
+                Height: =40
+                Width: =40
+                X: =546
+                Y: =53
+                ZIndex: =4
+
             TextInput2 As text:
                 Default: ="Search"
                 Height: =60
@@ -36,7 +59,7 @@
                 Width: =350
                 X: =26
                 Y: =35
-                ZIndex: =2
+                ZIndex: =5
 
             Label4_1 As label:
                 Align: =Align.Center
@@ -45,13 +68,13 @@
                 Size: =21
                 Text: ="Filter"
                 Width: =90
-                X: =498
-                Y: =69
-                ZIndex: =3
+                X: =469
+                Y: =65
+                ZIndex: =6
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Fill: =RGBA(215, 223, 240, 0.66)
+                Fill: =RGBA(215, 223, 240, 0.47)
                 Height: =920
                 Items: =CustomGallerySample
                 Layout: =Layout.Vertical
@@ -59,7 +82,7 @@
                 TemplatePadding: =0
                 TemplateSize: =751
                 Y: =130
-                ZIndex: =4
+                ZIndex: =7
 
                 Separator2 As rectangle:
                     BorderColor: =RGBA(116, 116, 116, 1)
@@ -79,6 +102,7 @@
                     ZIndex: =6
 
                 Container5 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
                     Height: =751
                     Width: =640
                     ZIndex: =7
@@ -127,6 +151,93 @@
                         Y: =38
                         ZIndex: =4
 
+                    Button1 As button:
+                        BorderThickness: =0
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(215, 223, 240, 1)
+                        RadiusBottomLeft: =25
+                        RadiusBottomRight: =25
+                        RadiusTopLeft: =25
+                        RadiusTopRight: =25
+                        Text: ="Answered"
+                        X: =45
+                        Y: =136
+                        ZIndex: =5
+
+                    Label3_9 As label:
+                        Size: =16
+                        Text: ="Applicaion flow"
+                        Width: =300
+                        X: =45
+                        Y: =206
+                        ZIndex: =6
+
+                    Label3_10 As label:
+                        Color: =RGBA(0, 94, 146, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =
+                        Size: =20
+                        Text: ="Ghfl home  loan"
+                        Underline: =true
+                        Width: =400
+                        X: =39
+                        Y: =246
+                        ZIndex: =7
+
+                    Label3_11 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =32
+                        Size: =16
+                        Text: |-
+                            ="Last Replies:"
+                        Width: =147
+                        X: =45
+                        Y: =296
+                        ZIndex: =8
+
+                    Label3_12 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =32
+                        Size: =16
+                        Text: |-
+                            ="4 Aug 2024  14:11:37"
+                        Width: =250
+                        X: =187
+                        Y: =296
+                        ZIndex: =9
+
+                    Label3_13 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =32
+                        Size: =16
+                        Text: |-
+                            ="Psted on:"
+                        Width: =120
+                        X: =45
+                        Y: =336
+                        ZIndex: =10
+
+                    Label3_14 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =32
+                        Size: =16
+                        Text: =
+                        Width: =250
+                        X: =253
+                        Y: =490
+                        ZIndex: =11
+
+                    Label3_16 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =32
+                        Size: =16
+                        Text: |-
+                            ="4 Aug 2024  14:11:37"
+                        Width: =346
+                        X: =187
+                        Y: =336
+                        ZIndex: =13
+
             Icon9 As icon.Search:
                 Color: =RGBA(0, 13, 75, 1)
                 Height: =40
@@ -134,7 +245,7 @@
                 Width: =50
                 X: =313
                 Y: =42
-                ZIndex: =5
+                ZIndex: =8
 
     Icon5 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
@@ -202,7 +313,7 @@
         Color: =RGBA(255, 255, 255, 1)
         Height: =50
         Icon: =Icon.Filter
-        X: =514
-        Y: =103
+        X: =480
+        Y: =100
         ZIndex: =13
 

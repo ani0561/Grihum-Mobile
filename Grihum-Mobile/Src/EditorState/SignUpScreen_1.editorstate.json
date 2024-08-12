@@ -86,7 +86,7 @@
       "MetaDataIDKey": "",
       "Name": "ButtonsignupCreateAccount_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -627,7 +627,7 @@
       "MetaDataIDKey": "",
       "Name": "Iconsignupcp_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1050,7 +1050,7 @@
       "MetaDataIDKey": "",
       "Name": "Iconsignupp_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1474,7 +1474,7 @@
       "MetaDataIDKey": "",
       "Name": "Label5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2049,7 +2049,7 @@
       "MetaDataIDKey": "",
       "Name": "Labelsignupcp_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2631,7 +2631,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelsignupEmail_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3220,7 +3220,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelsignupEmail_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3518,7 +3518,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelsignupEmail_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3816,7 +3816,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelsignupEmail_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4107,7 +4107,7 @@
       "MetaDataIDKey": "",
       "Name": "LabelsignupEmail_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5583,7 +5583,7 @@
       "MetaDataIDKey": "",
       "Name": "Labelsignupp_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6687,7 +6687,7 @@
       "MetaDataIDKey": "",
       "Name": "SignupLogoImg_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7620,7 +7620,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInputsignupcp_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8251,7 +8251,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInputsignupEmail_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8889,7 +8889,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInputsignupp_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
