@@ -70,8 +70,8 @@ SignUpScreen_1 As screen:
             DisabledColor: |
                 =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(237, 237, 237, 1)
-            DisplayMode: |
-                =If(
+            DisplayMode: |-
+                =/*If(
                     !IsBlank(TextInputsignupEmail_1.Text) && 
                     !IsBlank(TextInputsignupp_1.Text) && 
                     !IsBlank(TextInputsignupcp_1.Text) && 
@@ -79,8 +79,10 @@ SignUpScreen_1 As screen:
                     DisplayMode.Edit,       
                     DisplayMode.Disabled
                 )
+                */
             Fill: =RGBA(0, 13, 75, 1)
             Height: =70
+            HoverFill: =RGBA(0, 13, 75, 1)
             OnSelect: |
                 =If(
                     IsBlank(TextInputsignupEmail_1.Text),
@@ -114,7 +116,7 @@ SignUpScreen_1 As screen:
                                         Notify("Something went wrong: " & FirstError.Message, NotificationType.Error),
                                         // Patch success handling
                                         Notify("Data has been successfully saved.", NotificationType.Success)
-                                    ),
+                                    ),Navigate(SignInScreen),
                                     // If the user already exists in LoginDetails
                                     Notify(
                                         "User already has an existing account. Here is your username: " &
@@ -133,7 +135,7 @@ SignUpScreen_1 As screen:
                 Reset(TextInputsignupcp_1);
                 
                 // Navigate to the sign-in screen
-                Navigate(SignInScreen, ScreenTransition.UnCoverRight);
+                //Navigate(SignInScreen, ScreenTransition.UnCoverRight);
             Size: =18
             Text: ="Create Account"
             Width: =280
@@ -172,20 +174,20 @@ SignUpScreen_1 As screen:
             Icon: =If(var_signuppassword_visible,Icon.View,Icon.Hide)
             OnSelect: |-
                 =UpdateContext({var_signuppassword_visible : !var_signuppassword_visible});
-            Width: =61
+            Width: =41
             X: =520
-            Y: =546
+            Y: =542
             ZIndex: =11
 
         Iconsignupcp_1 As icon.Hide:
             Color: =RGBA(0, 0, 0, 1)
-            Height: =41
+            Height: =45
             Icon: =If(var_signupcppassword_visible,Icon.View,Icon.Hide)
             OnSelect: |-
                 =UpdateContext({var_signupcppassword_visible : !var_signupcppassword_visible});
-            Width: =61
+            Width: =41
             X: =529
-            Y: =705
+            Y: =696
             ZIndex: =12
 
         Label5 As label:
@@ -245,4 +247,20 @@ SignUpScreen_1 As screen:
             X: =87
             Y: =922
             ZIndex: =22
+
+        Rectangle4_1 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =39
+            Y: =600
+            ZIndex: =24
+
+        Rectangle4_2 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =39
+            Y: =759
+            ZIndex: =25
 
