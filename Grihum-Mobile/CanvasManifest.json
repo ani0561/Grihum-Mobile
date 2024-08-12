@@ -136,13 +136,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
+    "Dashnoard Screen1",
+    "OtpValidationScreen",
+    "Post Screen",
     "SignInScreen",
     "SignUpScreen",
-    "OtpValidationScreen",
-    "SignUpScreen_1",
-    "Screen2",
-    "Dashnoard Screen1",
-    "Post Screen"
+    "SignUpScreen_1"
   ]
 }
