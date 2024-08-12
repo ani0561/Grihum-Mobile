@@ -187,7 +187,8 @@ SignInScreen As screen:
             ZIndex: =11
 
         Rectangle2_1 As rectangle:
-            Fill: =RGBA(77, 77, 77, 1)
+            BorderColor: =Color.DarkBlue
+            Fill: =RGBA(0, 13, 75, 1)
             Height: =2
             HoverFill: =
             Width: =542
@@ -196,6 +197,7 @@ SignInScreen As screen:
             ZIndex: =12
 
         Icon4 As icon.View:
+            BorderColor: =Color.DarkBlue
             Color: =RGBA(0, 0, 0, 1)
             Height: =55
             Icon: =If(var_signPassword_visible,Icon.Hide,Icon.View)

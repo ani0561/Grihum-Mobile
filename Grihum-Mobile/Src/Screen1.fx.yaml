@@ -360,6 +360,7 @@
         Color: =RGBA(255, 255, 255, 1)
         Height: =50
         Icon: =Icon.Add
+        OnSelect: =Navigate(Screen2,ScreenTransition.Cover)
         Width: =70
         X: =394
         Y: =100
