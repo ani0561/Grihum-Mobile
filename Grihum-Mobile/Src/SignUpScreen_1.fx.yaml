@@ -256,14 +256,6 @@ SignUpScreen_1 As screen:
             Y: =454
             ZIndex: =23
 
-        Rectangle4_2 As rectangle:
-            Fill: =RGBA(0, 13, 75, 1)
-            Height: =1
-            Width: =560
-            X: =40
-            Y: =756
-            ZIndex: =25
-
         SignUpScreenContainer_2 As groupContainer.manualLayoutContainer:
             Height: =Max(App.Height, App.DesignHeight)
             Width: =Max(App.Width, App.DesignWidth)
@@ -512,14 +504,6 @@ SignUpScreen_1 As screen:
                 Y: =922
                 ZIndex: =22
 
-            Rectangle4_1 As rectangle:
-                Fill: =RGBA(0, 13, 75, 1)
-                Height: =1
-                Width: =560
-                X: =40
-                Y: =454
-                ZIndex: =23
-
             Rectangle4_4 As rectangle:
                 Fill: =RGBA(0, 13, 75, 1)
                 Height: =1
@@ -527,4 +511,12 @@ SignUpScreen_1 As screen:
                 X: =40
                 Y: =605
                 ZIndex: =26
+
+            Rectangle4_2 As rectangle:
+                Fill: =RGBA(0, 13, 75, 1)
+                Height: =1
+                Width: =560
+                X: =40
+                Y: =757
+                ZIndex: =27
 
