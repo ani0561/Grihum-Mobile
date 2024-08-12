@@ -239,6 +239,7 @@ SignUpScreen_1 As screen:
             ZIndex: =20
 
         LabelsignupEmail_5 As label:
+            Color: =RGBA(116, 116, 116, 1)
             FontWeight: =FontWeight.Semibold
             Height: =83
             Size: =21

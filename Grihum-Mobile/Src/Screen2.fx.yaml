@@ -1,0 +1,23 @@
+Screen2 As screen:
+
+    TextInput3 As text:
+        Default: =
+        Height: =230
+        Size: =21
+        Width: =560
+        X: =66
+        Y: =237
+        ZIndex: =1
+
+    TextInput3_1 As text:
+        Default: |+
+            =If(Len(TextInput3.Text) > 45, Left(TextInput3.Text, 45) & "...", TextInput3.Text)
+            
+        Height: =196
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        X: =39
+        Y: =522
+        ZIndex: =2
+
