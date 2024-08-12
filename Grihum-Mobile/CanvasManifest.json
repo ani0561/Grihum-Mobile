@@ -139,8 +139,9 @@
     "HomeScreen",
     "SignInScreen",
     "SignUpScreen",
-    "SignUpScreen_1",
     "OtpValidationScreen",
-    "Dashboard Screen"
+    "Dashboard Screen",
+    "Screen1",
+    "SignUpScreen_1"
   ]
 }
