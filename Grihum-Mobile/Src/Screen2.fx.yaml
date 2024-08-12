@@ -5,8 +5,8 @@ Screen2 As screen:
         Height: =230
         Size: =21
         Width: =560
-        X: =66
-        Y: =237
+        X: =39
+        Y: =240
         ZIndex: =1
 
     TextInput3_1 As text:
