@@ -267,6 +267,7 @@
 
                     Label8 As label:
                         Height: =107
+                        Overflow: =Overflow.Scroll
                         Size: =16
                         Text: ="How to fill the ghfl 12 steps application form in online can you explain how to fill the form without any errors in it"
                         Width: =560
