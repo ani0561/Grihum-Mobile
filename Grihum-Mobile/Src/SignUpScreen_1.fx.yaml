@@ -138,9 +138,9 @@ SignUpScreen_1 As screen:
                 //Navigate(SignInScreen, ScreenTransition.UnCoverRight);
             Size: =18
             Text: ="Create Account"
-            Width: =280
-            X: =172
-            Y: =820
+            Width: =322
+            X: =149
+            Y: =832
             ZIndex: =8
 
         TextInputsignupcp_1 As text:
