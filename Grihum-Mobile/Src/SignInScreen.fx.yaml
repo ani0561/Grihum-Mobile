@@ -6,13 +6,15 @@ SignInScreen As screen:
         ZIndex: =2
 
         SignInLogoImg As image:
-            Height: =200
+            Height: =246
             Image: =image
             RadiusBottomLeft: =100
             RadiusBottomRight: =100
             RadiusTopLeft: =100
             RadiusTopRight: =100
-            Width: =640
+            Width: =489
+            X: =69
+            Y: =56
             ZIndex: =1
 
         TextInputEmail As text:
@@ -52,12 +54,7 @@ SignInScreen As screen:
 
         "'ButtonSign-In' As button":
             DisplayMode: |
-                =If(
-                    !IsBlank(TextInputEmail.Text) && 
-                    !IsBlank(TextInputPassword.Text),
-                    DisplayMode.Edit,       
-                    DisplayMode.Disabled
-                )
+                =
             Height: =88
             OnSelect: |
                 =If(
@@ -96,14 +93,12 @@ SignInScreen As screen:
         signinForgotPasswordbtn As button:
             Align: =Align.Right
             Color: =RGBA(235, 42, 42, 1)
-            DisplayMode: |
-                =If(
-                    !IsBlank(TextInputEmail.Text),
-                    DisplayMode.Edit,       
-                    DisplayMode.Disabled    
-                )
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
+            HoverColor: =RGBA(179, 11, 11, 1)
+            HoverFill: =
             OnSelect: |
                 =// Fetch the user's details from the LoginDetails list
                 Set(UserDetails, LookUp(LoginDetails, UserName = TextInputEmail.Text));
@@ -156,7 +151,9 @@ SignInScreen As screen:
                     // Else part: If the email is not found in the list
                     Notify("Email not found. Please enter a valid email.", NotificationType.Error)
                 );
-            Size: =19
+            PressedColor: =RGBA(151, 0, 0, 1)
+            PressedFill: =RGBA(151, 0, 0, 1)
+            Size: =18
             Text: ="Forgot Password?"
             Underline: =true
             Width: =380
@@ -180,6 +177,7 @@ SignInScreen As screen:
             Height: =93
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =If(var_signPassword_visible,TextMode.SingleLine,TextMode.Password)
             Size: =21
             Width: =548
             X: =57
@@ -198,7 +196,9 @@ SignInScreen As screen:
         Icon4 As icon.View:
             Color: =RGBA(0, 0, 0, 1)
             Height: =55
-            Icon: =Icon.View
+            Icon: =If(var_signPassword_visible,Icon.Hide,Icon.View)
+            OnSelect: |-
+                =UpdateContext({var_signPassword_visible : !var_signPassword_visible});
             Width: =43
             X: =544
             Y: =631
@@ -225,14 +225,13 @@ SignInScreen As screen:
         signinForgotPasswordbtn_1 As button:
             Align: =Align.Right
             Color: =RGBA(245, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisplayMode: |
-                =If(
-                    !IsBlank(TextInputEmail.Text),
-                    DisplayMode.Edit,       
-                    DisplayMode.Disabled    
-                )
+                =
             Fill: =RGBA(0, 0, 0, 0)
             Height: =52
+            HoverColor: =RGBA(199, 14, 14, 1)
+            HoverFill: =
             OnSelect: |
                 =// Fetch the user's details from the LoginDetails list
                 Set(UserDetails, LookUp(LoginDetails, UserName = TextInputEmail.Text));
@@ -285,6 +284,8 @@ SignInScreen As screen:
                     // Else part: If the email is not found in the list
                     Notify("Email not found. Please enter a valid email.", NotificationType.Error)
                 );
+            PressedColor: =RGBA(255, 0, 0, 1)
+            PressedFill: =
             Size: =19
             Text: ="Sign Up"
             Underline: =true
