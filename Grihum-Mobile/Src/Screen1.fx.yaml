@@ -204,17 +204,6 @@
                         Y: =296
                         ZIndex: =9
 
-                    Label3_13 As label:
-                        FontWeight: =FontWeight.Bold
-                        Height: =32
-                        Size: =16
-                        Text: |-
-                            ="Psted on:"
-                        Width: =120
-                        X: =45
-                        Y: =336
-                        ZIndex: =10
-
                     Label3_14 As label:
                         FontWeight: =FontWeight.Semibold
                         Height: =32
@@ -224,17 +213,6 @@
                         X: =253
                         Y: =490
                         ZIndex: =11
-
-                    Label3_16 As label:
-                        FontWeight: =FontWeight.Semibold
-                        Height: =32
-                        Size: =16
-                        Text: |-
-                            ="4 Aug 2024  14:11:37"
-                        Width: =346
-                        X: =187
-                        Y: =336
-                        ZIndex: =13
 
                     Label2_12 As label:
                         FontWeight: =FontWeight.Bold
@@ -268,11 +246,11 @@
                     Label8 As label:
                         Height: =107
                         Overflow: =Overflow.Scroll
-                        Size: =16
+                        Size: =18
                         Text: ="How to fill the ghfl 12 steps application form in online can you explain how to fill the form without any errors in it"
                         Width: =560
-                        X: =39
-                        Y: =383
+                        X: =45
+                        Y: =345
                         ZIndex: =18
 
                     Icon10 As icon.Message:
@@ -321,7 +299,7 @@
         ZIndex: =7
 
     Circle1 As circle:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(184, 0, 0, 1)
         Height: =36
         Width: =36
         X: =508
@@ -370,4 +348,15 @@
         X: =22
         Y: =20
         ZIndex: =14
+
+    Label9 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Size: =14
+        Text: ="34"
+        Width: =36
+        X: =508
+        Y: =13
+        ZIndex: =15
 
