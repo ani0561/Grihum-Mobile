@@ -236,15 +236,6 @@
                         Y: =336
                         ZIndex: =13
 
-                    Icon1_1 As icon.Reset:
-                        Height: =39
-                        Icon: =Icon.Reset
-                        OnSelect: =
-                        Width: =51
-                        X: =59
-                        Y: =517
-                        ZIndex: =14
-
                     Label2_12 As label:
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -252,7 +243,7 @@
                         Size: =20
                         Text: ="Reply"
                         Width: =128
-                        X: =110
+                        X: =97
                         Y: =511
                         ZIndex: =15
 
@@ -262,7 +253,7 @@
                         Size: =20
                         Text: ="Likes()"
                         Width: =128
-                        X: =309
+                        X: =296
                         Y: =511
                         ZIndex: =16
 
@@ -270,7 +261,7 @@
                         Height: =35
                         Icon: =Icon.ThumbsUp
                         Width: =50
-                        X: =259
+                        X: =246
                         Y: =518
                         ZIndex: =17
 
@@ -282,6 +273,14 @@
                         X: =39
                         Y: =383
                         ZIndex: =18
+
+                    Icon10 As icon.Message:
+                        Height: =40
+                        Icon: =Icon.Message
+                        Width: =50
+                        X: =47
+                        Y: =522
+                        ZIndex: =19
 
             Icon9 As icon.Search:
                 Color: =RGBA(0, 13, 75, 1)
