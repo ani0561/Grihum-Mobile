@@ -1,7 +1,7 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(215, 223, 240, 0.47)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -19,7 +19,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =1050
+            Height: =1270
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -80,7 +80,7 @@
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Fill: =RGBA(215, 223, 240, 0.47)
-                Height: =920
+                Height: =937
                 Items: =CustomGallerySample
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -269,6 +269,47 @@
                 X: =313
                 Y: =42
                 ZIndex: =8
+
+            Label4_7 As label:
+                Align: =Align.Center
+                BorderThickness: =1
+                FocusedBorderThickness: =1
+                Height: =60
+                Size: =18
+                Text: =
+                Width: =226
+                X: =205
+                Y: =1144
+                ZIndex: =9
+
+            Button2 As button:
+                DisplayMode: |-
+                    =If(
+                        glbCurrentPage > 1,
+                        DisplayMode.Edit,
+                        DisplayMode.Disabled
+                    )
+                Fill: =RGBA(0, 16, 96, 1)
+                Height: =60
+                OnSelect: =If(glbCurrentPage > 1, Set(glbCurrentPage, glbCurrentPage - 1))
+                Size: =19
+                Text: ="<<"
+                Width: =60
+                X: =108
+                Y: =1144
+                ZIndex: =10
+
+            Button2_1 As button:
+                DisplayMode: =
+                Fill: =RGBA(0, 16, 96, 1)
+                Height: =60
+                OnSelect: =
+                Size: =19
+                Text: =">>"
+                Width: =60
+                X: =471
+                Y: =1144
+                ZIndex: =11
 
     Icon5 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
