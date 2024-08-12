@@ -34,8 +34,8 @@ SignUpScreen_1 As screen:
             FontWeight: =FontWeight.Semibold
             Height: =70
             Size: =18
-            Text: ="USERNAME/EMAIL*"
-            Width: =560
+            Text: ="USERNAME/EMAIL"
+            Width: =228
             X: =40
             Y: =326
             ZIndex: =5
@@ -60,7 +60,7 @@ SignUpScreen_1 As screen:
             FontWeight: =FontWeight.Semibold
             Height: =64
             Size: =18
-            Text: ="PASSWORD*"
+            Text: ="PASSWORD"
             Width: =560
             X: =40
             Y: =478
@@ -155,9 +155,9 @@ SignUpScreen_1 As screen:
 
         Labelsignupcp_1 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =70
+            Height: =62
             Size: =18
-            Text: ="CONFIRM PASSWORD*"
+            Text: ="CONFIRM PASSWORD"
             Width: =560
             X: =40
             Y: =625
@@ -182,7 +182,7 @@ SignUpScreen_1 As screen:
                 =UpdateContext({var_signupcppassword_visible : !var_signupcppassword_visible});
             Width: =61
             X: =529
-            Y: =696
+            Y: =705
             ZIndex: =12
 
         Rectangle2_1 As rectangle:
@@ -212,4 +212,40 @@ SignUpScreen_1 As screen:
             X: =435
             Y: =935
             ZIndex: =17
+
+        LabelsignupEmail_2 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =18
+            Text: ="*"
+            Width: =61
+            X: =249
+            Y: =328
+            ZIndex: =18
+
+        LabelsignupEmail_3 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =18
+            Text: ="*"
+            Width: =61
+            X: =172
+            Y: =477
+            ZIndex: =19
+
+    LabelsignupEmail_4 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =48
+        Size: =18
+        Text: ="*"
+        Width: =61
+        X: =288
+        Y: =627
+        ZIndex: =2
 
