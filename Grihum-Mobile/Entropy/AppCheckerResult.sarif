@@ -583,19 +583,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.AccessibleLabel"
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.AccessibleLabel",
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SignInScreen",
-                "type": "SignInScreen.SignInScreenContainer.Iconsigninp"
+                "type": "SignInScreen.SignInScreenContainer.Icon4"
               }
             }
           ],
@@ -613,19 +613,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.TabIndex"
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.TabIndex",
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SignInScreen",
-                "type": "SignInScreen.SignInScreenContainer.Iconsigninp"
+                "type": "SignInScreen.SignInScreenContainer.Icon4"
               }
             }
           ],
@@ -1093,17 +1093,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.1216167705"
+                  "fullyQualifiedName": "App.1216018006"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.1216167705",
+                  "fullyQualifiedName": "App.1216018006",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "1216167705",
+                "member": "1216018006",
                 "module": "App",
                 "type": "App"
               }
@@ -1123,17 +1123,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.1216018006"
+                  "fullyQualifiedName": "App.1216167705"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.1216018006",
+                  "fullyQualifiedName": "App.1216167705",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "1216018006",
+                "member": "1216167705",
                 "module": "App",
                 "type": "App"
               }
