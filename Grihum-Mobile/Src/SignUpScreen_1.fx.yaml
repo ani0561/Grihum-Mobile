@@ -138,9 +138,9 @@ SignUpScreen_1 As screen:
                 //Navigate(SignInScreen, ScreenTransition.UnCoverRight);
             Size: =18
             Text: ="Create Account"
-            Width: =280
-            X: =172
-            Y: =820
+            Width: =322
+            X: =149
+            Y: =832
             ZIndex: =8
 
         TextInputsignupcp_1 As text:
@@ -252,7 +252,7 @@ SignUpScreen_1 As screen:
             Fill: =RGBA(0, 13, 75, 1)
             Height: =1
             Width: =560
-            X: =39
+            X: =40
             Y: =600
             ZIndex: =24
 
@@ -263,4 +263,12 @@ SignUpScreen_1 As screen:
             X: =39
             Y: =759
             ZIndex: =25
+
+        Rectangle4_3 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =40
+            Y: =449
+            ZIndex: =26
 
