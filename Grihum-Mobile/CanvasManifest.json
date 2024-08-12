@@ -141,6 +141,7 @@
     "SignUpScreen",
     "OtpValidationScreen",
     "Dashboard Screen",
-    "Screen1"
+    "Screen1",
+    "SignUpScreen_1"
   ]
 }
