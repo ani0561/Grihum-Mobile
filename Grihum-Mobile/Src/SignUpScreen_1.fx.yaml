@@ -67,8 +67,11 @@ SignUpScreen_1 As screen:
             ZIndex: =7
 
         ButtonsignupCreateAccount_1 As button:
-            DisplayMode: |
-                =If(
+            DisabledColor: |
+                =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(237, 237, 237, 1)
+            DisplayMode: |-
+                =/*If(
                     !IsBlank(TextInputsignupEmail_1.Text) && 
                     !IsBlank(TextInputsignupp_1.Text) && 
                     !IsBlank(TextInputsignupcp_1.Text) && 
@@ -76,8 +79,10 @@ SignUpScreen_1 As screen:
                     DisplayMode.Edit,       
                     DisplayMode.Disabled
                 )
+                */
             Fill: =RGBA(0, 13, 75, 1)
             Height: =70
+            HoverFill: =RGBA(0, 13, 75, 1)
             OnSelect: |
                 =If(
                     IsBlank(TextInputsignupEmail_1.Text),
@@ -111,7 +116,7 @@ SignUpScreen_1 As screen:
                                         Notify("Something went wrong: " & FirstError.Message, NotificationType.Error),
                                         // Patch success handling
                                         Notify("Data has been successfully saved.", NotificationType.Success)
-                                    ),
+                                    ),Navigate(SignInScreen),
                                     // If the user already exists in LoginDetails
                                     Notify(
                                         "User already has an existing account. Here is your username: " &
@@ -130,7 +135,7 @@ SignUpScreen_1 As screen:
                 Reset(TextInputsignupcp_1);
                 
                 // Navigate to the sign-in screen
-                Navigate(SignInScreen, ScreenTransition.UnCoverRight);
+                //Navigate(SignInScreen, ScreenTransition.UnCoverRight);
             Size: =18
             Text: ="Create Account"
             Width: =280
@@ -169,37 +174,21 @@ SignUpScreen_1 As screen:
             Icon: =If(var_signuppassword_visible,Icon.View,Icon.Hide)
             OnSelect: |-
                 =UpdateContext({var_signuppassword_visible : !var_signuppassword_visible});
-            Width: =61
+            Width: =41
             X: =520
-            Y: =546
+            Y: =533
             ZIndex: =11
 
         Iconsignupcp_1 As icon.Hide:
             Color: =RGBA(0, 0, 0, 1)
-            Height: =41
+            Height: =45
             Icon: =If(var_signupcppassword_visible,Icon.View,Icon.Hide)
             OnSelect: |-
                 =UpdateContext({var_signupcppassword_visible : !var_signupcppassword_visible});
-            Width: =61
+            Width: =41
             X: =529
-            Y: =705
+            Y: =687
             ZIndex: =12
-
-        Rectangle2_1 As rectangle:
-            BorderThickness: =1
-            Height: =1
-            Width: =560
-            X: =40
-            Y: =592
-            ZIndex: =14
-
-        Rectangle2_2 As rectangle:
-            BorderThickness: =1
-            Height: =1
-            Width: =560
-            X: =40
-            Y: =750
-            ZIndex: =15
 
         Label5 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -237,15 +226,25 @@ SignUpScreen_1 As screen:
             Y: =477
             ZIndex: =19
 
-    LabelsignupEmail_4 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 0, 0, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =48
-        Size: =18
-        Text: ="*"
-        Width: =61
-        X: =288
-        Y: =627
-        ZIndex: =2
+        LabelsignupEmail_4 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =18
+            Text: ="*"
+            Width: =61
+            X: =289
+            Y: =630
+            ZIndex: =20
+
+        LabelsignupEmail_5 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =83
+            Size: =21
+            Text: ="Already have an account?"
+            Width: =360
+            X: =87
+            Y: =922
+            ZIndex: =22
 

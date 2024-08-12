@@ -25,12 +25,6 @@
             Y: =0
             ZIndex: =1
 
-            Rectangle2 As rectangle:
-                Fill: =RGBA(0, 13, 75, 1)
-                Height: =130
-                Width: =640
-                ZIndex: =1
-
             Rectangle2_4 As rectangle:
                 Fill: =RGBA(50, 86, 160, 1)
                 Height: =60
@@ -253,14 +247,6 @@
                 Y: =42
                 ZIndex: =8
 
-    Icon4 As icon.Hamburger:
-        Color: =RGBA(0, 0, 0, 1)
-        Icon: =Icon.Hamburger
-        Width: =60
-        X: =19
-        Y: =12
-        ZIndex: =4
-
     Icon5 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
         Icon: =Icon.Search
@@ -296,17 +282,6 @@
         X: =508
         Y: =9
         ZIndex: =8
-
-    Label3 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =30
-        Size: =21
-        Text: ="1"
-        Width: =30
-        X: =514
-        Y: =12
-        ZIndex: =9
 
     Image1_1 As image:
         Height: =90
