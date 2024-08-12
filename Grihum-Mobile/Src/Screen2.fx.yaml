@@ -111,7 +111,7 @@ Screen2 As screen:
                         Size: =23
                         Text: ="Forum"
                         Width: =250
-                        X: =68
+                        X: =34
                         Y: =160
                         ZIndex: =4
 
@@ -131,8 +131,8 @@ Screen2 As screen:
                         Size: =21
                         Text: ="*"
                         Width: =30
-                        X: =38
-                        Y: =160
+                        X: =140
+                        Y: =177
                         ZIndex: =6
 
                     Label11_5 As label:
