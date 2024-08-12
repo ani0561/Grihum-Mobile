@@ -190,22 +190,6 @@ SignUpScreen_1 As screen:
             Y: =687
             ZIndex: =12
 
-        Rectangle2_1 As rectangle:
-            BorderThickness: =1
-            Height: =1
-            Width: =560
-            X: =40
-            Y: =592
-            ZIndex: =14
-
-        Rectangle2_2 As rectangle:
-            BorderThickness: =1
-            Height: =1
-            Width: =560
-            X: =40
-            Y: =750
-            ZIndex: =15
-
         Label5 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(255, 0, 0, 1)
@@ -253,14 +237,6 @@ SignUpScreen_1 As screen:
             X: =289
             Y: =630
             ZIndex: =20
-
-        Rectangle2_3 As rectangle:
-            BorderThickness: =1
-            Height: =1
-            Width: =560
-            X: =40
-            Y: =442
-            ZIndex: =21
 
         LabelsignupEmail_5 As label:
             FontWeight: =FontWeight.Semibold
