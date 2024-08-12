@@ -311,7 +311,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3579,7 +3579,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInputPassword",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

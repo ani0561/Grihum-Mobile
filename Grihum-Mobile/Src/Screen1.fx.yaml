@@ -85,7 +85,7 @@
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
-                TemplateSize: =751
+                TemplateSize: =603
                 Y: =130
                 ZIndex: =7
 
@@ -101,7 +101,7 @@
 
                 Container5 As groupContainer.manualLayoutContainer:
                     Fill: =RGBA(255, 255, 255, 1)
-                    Height: =751
+                    Height: =605
                     Width: =640
                     ZIndex: =7
 
@@ -236,6 +236,53 @@
                         Y: =336
                         ZIndex: =13
 
+                    Icon1_1 As icon.Reset:
+                        Height: =39
+                        Icon: =Icon.Reset
+                        OnSelect: =
+                        Width: =51
+                        X: =59
+                        Y: =517
+                        ZIndex: =14
+
+                    Label2_12 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        OnSelect: =
+                        Size: =20
+                        Text: ="Reply"
+                        Width: =128
+                        X: =110
+                        Y: =511
+                        ZIndex: =15
+
+                    Label2_13 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =20
+                        Text: ="Likes()"
+                        Width: =128
+                        X: =309
+                        Y: =511
+                        ZIndex: =16
+
+                    Icon13 As icon.ThumbsUp:
+                        Height: =35
+                        Icon: =Icon.ThumbsUp
+                        Width: =50
+                        X: =259
+                        Y: =518
+                        ZIndex: =17
+
+                    Label8 As label:
+                        Height: =107
+                        Size: =16
+                        Text: ="How to fill the ghfl 12 steps application form in online can you explain how to fill the form without any errors in it"
+                        Width: =560
+                        X: =39
+                        Y: =383
+                        ZIndex: =18
+
             Icon9 As icon.Search:
                 Color: =RGBA(0, 13, 75, 1)
                 Height: =40
@@ -248,7 +295,7 @@
     Icon5 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
         Icon: =Icon.Search
-        X: =102
+        X: =89
         Y: =12
         ZIndex: =5
 
@@ -285,7 +332,7 @@
         Height: =90
         Image: =image
         Width: =220
-        X: =211
+        X: =198
         ZIndex: =10
 
     Icon7 As icon.Add:
@@ -314,4 +361,13 @@
         X: =508
         Y: =100
         ZIndex: =13
+
+    Icon11 As icon.Hamburger:
+        Color: =RGBA(0, 13, 75, 1)
+        Height: =50
+        Icon: =Icon.Hamburger
+        Width: =50
+        X: =22
+        Y: =20
+        ZIndex: =14
 
