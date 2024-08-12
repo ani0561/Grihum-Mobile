@@ -583,6 +583,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SignInScreen",
+                "type": "SignInScreen.SignInScreenContainer.Iconsigninp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Iconsigninp.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SignInScreen",
+                "type": "SignInScreen.SignInScreenContainer.Iconsigninp"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "SignUpScreen.SignUpScreenContainer.TextInputsignupEmail.AccessibleLabel"
                 }
               ],
@@ -1033,17 +1093,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.1216018006"
+                  "fullyQualifiedName": "App.1216167705"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.1216018006",
+                  "fullyQualifiedName": "App.1216167705",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "1216018006",
+                "member": "1216167705",
                 "module": "App",
                 "type": "App"
               }
@@ -1063,17 +1123,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.1216167705"
+                  "fullyQualifiedName": "App.1216018006"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.1216167705",
+                  "fullyQualifiedName": "App.1216018006",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "1216167705",
+                "member": "1216018006",
                 "module": "App",
                 "type": "App"
               }

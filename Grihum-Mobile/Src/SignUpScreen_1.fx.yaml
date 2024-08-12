@@ -176,7 +176,7 @@ SignUpScreen_1 As screen:
                 =UpdateContext({var_signuppassword_visible : !var_signuppassword_visible});
             Width: =41
             X: =520
-            Y: =533
+            Y: =542
             ZIndex: =11
 
         Iconsignupcp_1 As icon.Hide:
@@ -187,7 +187,7 @@ SignUpScreen_1 As screen:
                 =UpdateContext({var_signupcppassword_visible : !var_signupcppassword_visible});
             Width: =41
             X: =529
-            Y: =687
+            Y: =696
             ZIndex: =12
 
         Label5 As label:
@@ -247,4 +247,20 @@ SignUpScreen_1 As screen:
             X: =87
             Y: =922
             ZIndex: =22
+
+        Rectangle4_1 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =39
+            Y: =600
+            ZIndex: =24
+
+        Rectangle4_2 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =39
+            Y: =759
+            ZIndex: =25
 
