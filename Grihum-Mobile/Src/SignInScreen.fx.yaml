@@ -1,0 +1,200 @@
+SignInScreen As screen:
+
+    Passwordbtn As button:
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        Height: =70
+        HoverBorderColor: =
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =
+        Text: =
+        Width: =80
+        X: =520
+        Y: =736
+        ZIndex: =1
+
+    SignInScreenContainer As groupContainer.manualLayoutContainer:
+        Height: =Max(App.Height, App.DesignHeight)
+        Width: =Max(App.Width, App.DesignWidth)
+        ZIndex: =2
+
+        SignInLogoImg As image:
+            Height: =200
+            Image: =image
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Width: =640
+            ZIndex: =1
+
+        TextInputEmail As text:
+            Default: =
+            Height: =70
+            Size: =21
+            Width: =560
+            X: =40
+            Y: =483
+            ZIndex: =2
+
+        LabelEmail As label:
+            Color: =RGBA(184, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            Size: =18
+            Text: ="USERNAME/EMAIL"
+            Width: =560
+            X: =40
+            Y: =356
+            ZIndex: =3
+
+        TextInputPassword As text:
+            Default: =
+            Height: =70
+            Mode: =If(var_signinpassword_visible, TextMode.SingleLine, TextMode.Password)
+            Size: =21
+            Width: =480
+            X: =40
+            Y: =737
+            ZIndex: =4
+
+        Labelpassword As label:
+            Color: =RGBA(184, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            Size: =18
+            Text: ="PASSWORD"
+            Width: =560
+            X: =40
+            Y: =610
+            ZIndex: =5
+
+        "'ButtonSign-In' As button":
+            DisplayMode: |
+                =If(
+                    !IsBlank(TextInputEmail.Text) && 
+                    !IsBlank(TextInputPassword.Text),
+                    DisplayMode.Edit,       
+                    DisplayMode.Disabled
+                )
+            Height: =70
+            OnSelect: |
+                =If(
+                    IsBlank(TextInputEmail.Text) || IsBlank(TextInputPassword.Text),
+                    Notify("Username and password are required", NotificationType.Error),
+                    
+                    // Valid username and password provided
+                    Set(
+                        CurrentUser,
+                        LookUp(
+                            LoginDetails,
+                            UserName = TextInputEmail.Text && Password = TextInputPassword.Text
+                        )
+                    );
+                    
+                    If(
+                        IsBlank(CurrentUser),
+                        Notify("Incorrect username or password", NotificationType.Error),
+                        
+                        // Sign-in successful
+                        Notify("Sign-in successful", NotificationType.Success);
+                        Navigate('Dashboard Screen') // Assuming 'Dashboard Screen' is your target screen
+                    )
+                );
+                
+                // Reset email and password input fields
+                Reset(TextInputEmail);
+                Reset(TextInputPassword);
+            Size: =18
+            Text: ="Sign-In"
+            Width: =280
+            X: =180
+            Y: =890
+            ZIndex: =6
+
+        signinForgotPasswordbtn As button:
+            Color: =RGBA(168, 0, 0, 1)
+            DisplayMode: |
+                =If(
+                    !IsBlank(TextInputEmail.Text),
+                    DisplayMode.Edit,       
+                    DisplayMode.Disabled    
+                )
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            OnSelect: |
+                =// Fetch the user's details from the LoginDetails list
+                Set(UserDetails, LookUp(LoginDetails, UserName = TextInputEmail.Text));
+                
+                // Check if the email exists in the LoginDetails list
+                If(
+                    !IsBlank(UserDetails),
+                    
+                    // Generate a random 4-digit OTP
+                    Set(OTP, Text(RoundUp(Rand() * 10000, 0), "0000"));
+                    
+                    // Get the current date and time for the email
+                    Set(CurrentDateTime, Now());
+                    
+                    // Format the email content with HTML and inline CSS for color
+                    Set(EmailContent,
+                        "<html><body style='font-family: Arial, sans-serif;'>" &
+                        "<h2 style='color: #007BFF;'>Password Reset OTP</h2>" &
+                        "<p style='color: #333333;'>Dear " & User().FullName & ",</p>" &
+                        "<p style='color: #333333;'>Your OTP for password reset is: <b style='color: #FF5722;'>" & OTP & "</b></p>" &
+                        "<p style='color: #333333;'>Please use this OTP to complete your password reset process. This OTP is valid for the next 10 minutes.</p>" &
+                        "<br>" &
+                        "<p style='color: #777777;'>Generated on: " & Text(CurrentDateTime, "dddd, mmmm d, yyyy hh:mm AM/PM") & "</p>" &
+                        "<br>" &
+                        "<p style='color: #555555;'>Thank you,<br>Team GHFL.</p>" &
+                        "</body></html>"
+                    );
+                    
+                    // Send the OTP via email with HTML content
+                    Office365Outlook.SendEmailV2(
+                        TextInputEmail.Text,
+                        "Password Reset OTP",
+                        EmailContent,
+                        {IsHtml: true}
+                    );
+                    
+                    // Update the LoginDetails with the OTP for the specified user
+                    Patch(
+                        LoginDetails,
+                        UserDetails,
+                        { OTP: OTP }
+                    );
+                    
+                    // Notify the user that the OTP has been sent
+                    Notify("OTP has been sent to your email.", NotificationType.Success);
+                    
+                    // Navigate to the 'OTP Validate Screen'
+                    Navigate(OtpValidationScreen, ScreenTransition.Fade)
+                ,
+                    // Else part: If the email is not found in the list
+                    Notify("Email not found. Please enter a valid email.", NotificationType.Error)
+                );
+            Size: =18
+            Text: ="Forgot Password"
+            Underline: =true
+            Width: =380
+            X: =130
+            Y: =1016
+            ZIndex: =7
+
+        Iconsigninp As icon.Hide:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Icon: =If(var_signinpassword_visible,Icon.View,Icon.Hide)
+            OnSelect: |-
+                =UpdateContext({var_signinpassword_visible : !var_signinpassword_visible});
+            Width: =30
+            X: =540
+            Y: =757
+            ZIndex: =8
+
