@@ -1,4 +1,4 @@
-Screen2 As screen:
+"'Post Screen' As screen":
 
     RectQuickActionBar2 As rectangle:
         Fill: =Color.White
