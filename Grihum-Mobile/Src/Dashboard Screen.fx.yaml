@@ -82,11 +82,11 @@
                 ZIndex: =3
 
                 Icon2 As icon.Search:
-                    Height: =50
+                    Height: =43
                     Icon: =Icon.Search
-                    Width: =50
-                    X: =590
-                    Y: =5
+                    Width: =60
+                    X: =580
+                    Y: =11
                     ZIndex: =1
 
                 TextInput1 As text:
