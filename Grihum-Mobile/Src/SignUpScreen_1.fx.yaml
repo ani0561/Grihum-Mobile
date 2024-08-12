@@ -309,7 +309,7 @@ SignUpScreen_1 As screen:
                 Size: =18
                 Width: =480
                 X: =40
-                Y: =523
+                Y: =532
                 ZIndex: =6
 
             Labelsignupp_2 As label:
@@ -443,7 +443,7 @@ SignUpScreen_1 As screen:
                     =UpdateContext({var_signupcppassword_visible : !var_signupcppassword_visible});
                 Width: =41
                 X: =529
-                Y: =696
+                Y: =705
                 ZIndex: =12
 
             Label5_1 As label:
